@@ -1,0 +1,32 @@
+ {% extends 'base/base.html' %} {%load static%}{% block content %}
+<section class=" container">
+    <div class="questions">
+
+        <div class="texto-question">
+            <h2>Nuestro negocio es ayudar al tuyo</h2>
+            <p>Desde un escritorio, oficina, sala de juntas y conferencias, en AURORA tenemos un espacio para ti.</p>
+            <img src="{% static 'img/undraw_in_the_office_o44c.svg' %}" alt="">
+        </div>
+        <div class="secciones formulario">
+            <h2 class="subtitulo">Bienvenidos</h2>
+            <form method="POST" enctype="form-data">{% csrf_token %}{{ form }}
+                {% comment %} <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apeido">Apeido</label><br>
+                <input type="text" id="apeido" name="apeido"><br>
+                <label for="telefono">Telefono</label><br>
+                <input type="text" id="telefono" name="telefono"><br>
+                <label for="email">Correo Electronico</label><br>
+                <input type="email" id="email" name="email"><br> {% endcomment %}
+
+                <input class="btn-submit" type="submit">
+            </form>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+{% endblock content %}

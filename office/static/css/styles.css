@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #7A63FF;
+    font-weight: 300;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container1 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+/* Header */
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: rgba(181, 181, 181, 0.8);
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgb(139, 132, 132, .4);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    transition: ease-in-out .5s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 90%;
+    align-items: center;
+}
+
+nav .logo {
+    height: 80px;
+}
+
+nav .logo img {
+    height: 100%;
+    vertical-align: top;
+}
+
+.enlaces-header {
+    transition: ease-in .5s;
+}
+
+.nav .enlaces-header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.boton-menu {
+    display: none;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    line-height: 80px;
+    transition: color .5s ease-in;
+}
+
+.boton-menu>img {
+    width: 50px;
+    background-color: #7A63FF;
+    border-radius: 25%;
+    border: solid 2px black;
+    vertical-align: middle;
+}
+
+
+/* question */
+
+.questions {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions img {
+    width: 500px;
+}
+
+.texto-question {
+    margin: 0 0 0 30px;
+}
+
+.texto-question h2 {
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+}
+
+.texto-question p {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 25px;
+    color: gray;
+    text-align: center;
+}
+
+.texto-question img {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.texto-question a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #1fde82;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px #37d6899c;
+}
+
+
+/* FORMULARIO */
+
+.secciones {
+    width: 70%;
+    margin: auto;
+}
+
+.formulario h2 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #000000;
+}
+
+.formulario {
+    padding: 30px;
+}
+
+.formulario label {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.formulario input {
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border-color: #9476da63;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.btn-submit {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #1fde82;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px #37d68975;
+}
+
+.btn-submit:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    background: #C4C4C4;
+}
+
+.lolfooter {
+    padding: 5px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.partfooter {
+    width: 22%;
+    text-align: center;
+}
+
+.partfooter h4 {
+    color: #1d273b;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partfooter .logo {
+    width: 70%;
+}
+
+.partfooter a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+}
+
+.partfooter a:hover {
+    color: rgb(48, 196, 48);
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    width: 40px;
+    border-radius: 50%;
+    border: solid 2px black;
+    transition: color .3s ease-in-out;
+}
+
+.partfooter img:hover {
+    background: #1FDE82;
+    box-shadow: 2px 0 8px 0 #1FDE82;
+}
+
+@media screen and (max-width:800px) {
+    .titulo {
+        font-size: 35px;
+    }
+    /* about us */
+    .articulo {
+        width: 45%;
+    }
+    .questions {
+        margin-top: 250px;
+        margin-bottom: 400px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+        text-align: center;
+    }
+    .questions img {
+        width: 400px;
+    }
+    .texto-question h2 {
+        font-size: 50px;
+        margin: 0 30px;
+    }
+    /* service */
+    .services {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .services img {
+        width: 500px;
+    }
+    /* footer */
+    .partfooter {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .titulo {
+        font-size: 30px;
+    }
+    .h1 {
+        font-size: 40px;
+    }
+    .contenido-hero {
+        height: 600px;
+    }
+    .contenido-hero img {
+        width: 300px;
+    }
+    .nav {
+        padding: 0 10px;
+    }
+    .enlaces-header {
+        position: fixed;
+        background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.4% at 100% 0);
+    }
+    .nav .menudos {
+        clip-path: circle(141.4% at 100% 0);
+    }
+    .nav .enlaces-header a {
+        color: white;
+    }
+    .boton-menu {
+        display: block;
+    }
+    /* .about-us{} */
+    .articulo {
+        width: 90%;
+    }
+    /* Questuions */
+    .questions>img {
+        width: 300px;
+    }
+    /* results */
+    .numbers .number {
+        width: 90%;
+    }
+    .results-text h4 {
+        font-size: 30px;
+    }
+    .services img {
+        width: 100%;
+    }
+    .services .box-skills {
+        width: 100%;
+    }
+    .box-skills h4 {
+        width: 100%;
+    }
+    /* Footer */
+    .partfooter {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+}
