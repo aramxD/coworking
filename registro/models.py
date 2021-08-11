@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class registro(models.Model):
+class Registro(models.Model):
     #Datos generales
     nombre = models.CharField(max_length=30)
     apeido = models.CharField(max_length=30)

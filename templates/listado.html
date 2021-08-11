@@ -1,0 +1,35 @@
+ {% extends 'base/base.html' %} {%load static%}{% block content %}
+<section class=" container listado-registros">
+
+
+    <a href="{%url 'listado_export'%}"> Exportar </a>
+
+    <h2> Registros </h2>
+
+
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apeido</th>
+            <th>Email</th>
+            <th>Telefono</th>
+            <th>Hora de Llegada</th>
+        </tr>
+
+        {% for i in listado %}
+        <tr>
+            <td>{{i.nombre}}</td>
+            <td>{{i.apeido}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.telefono}}</td>
+            <td>{{i.fecha}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</section>
+
+
+
+{% endblock content %}

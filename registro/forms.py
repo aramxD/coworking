@@ -10,5 +10,5 @@ from .models import *
     
 class RegistroForm(ModelForm):
     class Meta:
-        model = registro
+        model = Registro
         fields= ['nombre', 'apeido', 'telefono', 'email']

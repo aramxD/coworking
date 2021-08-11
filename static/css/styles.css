@@ -47,7 +47,7 @@ header::before {
 
 nav {
     width: 100%;
-    height: 80px;
+    height: 60px;
     background: rgba(181, 181, 181, 0.8);
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgb(139, 132, 132, .4);
@@ -60,13 +60,13 @@ nav {
 .nav {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     width: 90%;
     align-items: center;
 }
 
 nav .logo {
-    height: 80px;
+    height: 60px;
 }
 
 nav .logo img {
@@ -88,8 +88,8 @@ nav .logo img {
 
 .boton-menu {
     display: none;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     z-index: 100;
     cursor: pointer;
@@ -191,7 +191,7 @@ nav .logo img {
     height: 50px;
     border-color: #9476da63;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding-left: 20px;
     margin-top: 5px;
 }
@@ -238,7 +238,7 @@ footer {
 }
 
 .partfooter {
-    width: 22%;
+    width: 10%;
     text-align: center;
 }
 
@@ -279,6 +279,43 @@ footer {
 .partfooter img:hover {
     background: #1FDE82;
     box-shadow: 2px 0 8px 0 #1FDE82;
+}
+
+
+/* Tabla para exportar */
+
+.listado-registros h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #000000;
+}
+
+.listado-registros a {
+    margin-left: 15px;
+    margin-bottom: 30px;
+    width: 130px;
+    display: inline-block;
+    background: #1fde82;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px #37d6899c;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width:800px) {
