@@ -3,12 +3,15 @@ from django.shortcuts import render, redirect
 from .models import *
 from .forms import *
 from django.http import HttpResponse 
+from django.conf import settings
+
 
 # Librerias para agregar usuarios
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.db import IntegrityError
 from django.contrib.auth import login, logout, authenticate
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
@@ -34,7 +37,7 @@ def signupuser(request):
         else:
             return render(request, 'signupuser.html', {'form': UserCreationForm() ,'error': 'Password did not match'})
 
-
+@login_required
 def logoutuser(request):
     if request.method == 'POST':
         logout(request)
@@ -75,7 +78,7 @@ def registro(request):
             }
     return render (request, 'index.html', context)
 
-
+@login_required
 def listado_registro(request):
     listado = Registro.objects.all()
     context = {
@@ -84,7 +87,7 @@ def listado_registro(request):
         }
     return render (request, 'listado.html', context)
 
-
+@login_required
 def listado_export(request):
     response = HttpResponse(content_type='text/csv')
 
