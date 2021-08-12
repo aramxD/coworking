@@ -109,19 +109,15 @@ nav .logo img {
 /* question */
 
 .questions {
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.questions img {
-    width: 500px;
-}
-
 .texto-question {
     margin: 0 0 0 30px;
+    width: 500px;
 }
 
 .texto-question h2 {
@@ -143,7 +139,7 @@ nav .logo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
 }
 
 .texto-question a {
@@ -166,31 +162,35 @@ nav .logo img {
 /* FORMULARIO */
 
 .secciones {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
 .formulario h2 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 50px;
     color: #000000;
 }
 
 .formulario {
-    padding: 30px;
+    padding: 20px;
+}
+
+.formulario li {
+    list-style: none;
 }
 
 .formulario label {
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 10px;
 }
 
 .formulario input {
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     border-color: #9476da63;
-    border-radius: 15px;
+    border-radius: 7px;
     margin-bottom: 15px;
     padding-left: 20px;
     margin-top: 5px;
@@ -210,6 +210,7 @@ nav .logo img {
     color: white;
     border-radius: 10px;
     box-shadow: 0 8px 8px #37d68975;
+    height: 40px;
 }
 
 .btn-submit:active {

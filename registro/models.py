@@ -8,6 +8,7 @@ class Registro(models.Model):
     telefono  = models.CharField(max_length=150)
     email = models.CharField(max_length=100)
     fecha = models.DateTimeField(auto_now_add=True)
+    motivo = models.CharField(max_length=50)
     
     def __str__(self):
         return self.nombre

@@ -1,5 +1,5 @@
 from django import forms
-from django.forms import fields, ModelForm
+from django.forms import fields, ModelForm, widgets
 from .models import *
 
 # class RegistroForm(forms.Form):
@@ -11,4 +11,8 @@ from .models import *
 class RegistroForm(ModelForm):
     class Meta:
         model = Registro
-        fields= ['nombre', 'apeido', 'telefono', 'email']
+        fields= ['nombre', 'apeido', 'telefono', 'email', 'motivo']
+        labels = {
+            "motivo": "Motivo de visita"
+        }
+        widgets = {'required': True}
